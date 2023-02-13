@@ -25,12 +25,12 @@ var i = 0;
 function typeWriter() {
 	var today = new Date();
 
-	var message = 'Good ';
+	var message = 'SELAMAT ';
 
-	var morningMessage = 'Morning, ';
-	var afternoonMessage = 'Afternoon, ';
-	var eveningMessage = 'Evening, ';
-	var nightMessage = 'Night, ';
+	var morningMessage = 'BERGABUNG! ';
+	var afternoonMessage = 'BERGABUNG! ';
+	var eveningMessage = 'BERGABUNG! ';
+	var nightMessage = 'BERGABUNG! ';
 
 	var hour = today.getHours();
 
@@ -39,7 +39,7 @@ function typeWriter() {
 	else if (hour > 10) message += afternoonMessage;
 	else message += morningMessage;
 
-	message += 'Vinny';
+	message += '';
 	currentDate = new Date()
 	date = currentDate.getDate()
 	month = currentDate.getMonth()

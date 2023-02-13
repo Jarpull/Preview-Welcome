@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+.header-section {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 50px;
+}
+
+.colorpicker {
+    position: absolute;
+    top: 10%;
+    right: 49%;
+    height: 30px;
+    width: 30px;
+    background: rgba(255, 0, 0, 0.5);
+    opacity: 0;
+    overflow: hidden;
+    z-index: 100;
+    transition: opacity .25s ease-in-out .0s;
+}
+
+.colorpicker:hover {
+    opacity: 0.5;
+    transition: opacity .25s ease-in-out .0s;
+}
+
+#time {
+    visibility: hidden;
+    margin-top: 30vh;
+}
+
+#message {
+    visibility: hidden;
+}
+
+
+.light-mode {
+    background-color: white;
+    color: black;
+    transition: background-color 5s ease-in-out, color 5s ease-in-out;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+    transition: background-color 5s ease-in-out, color 5s ease-in-out;
+}
+
+
+.modal-section {
+    color: black;
+}
+
+@media screen and (max-width: 425px) {
+    .colorpicker {
+        right: 45%;
+        opacity: 0.15;
+    }
+}
